@@ -23,15 +23,18 @@ public class Program {
 		
 		System.out.println("seller insert teste");
 		
-		Seller newSeller=new Seller(null, "Greg", "greg@gmail.com",new Date(), 300.0, department);
+		Seller newSeller=new Seller(null, "Gregoria", "gregoria@gmail.com",new Date(), 300000.0, department);
 		
 		sellerDao.insert(newSeller);
 		System.out.println("seller inserted into database! new id= "+newSeller.getId());
 		
 		
+		System.out.println("teste do update: ");
 		
+		newSeller=sellerDao.findById(2);
 		
-		
+		newSeller.setName("vitória");
+		sellerDao.update(newSeller);
 		
 		
 		
