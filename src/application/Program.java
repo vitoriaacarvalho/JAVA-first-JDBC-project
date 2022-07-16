@@ -22,12 +22,11 @@ public class Program {
 			System.out.println(obj);
 		}
 		
-		System.out.println("teste deleting seller: ");
+		System.out.println("teste find by id: ");
 		
 		
-		System.out.println("enter id for delete test: ");
-		int id=sc.nextInt();
-		sellerDao.deleteById(id);
+		
+		sellerDao.deleteById(5);
 		System.out.println("done!");
 		
 		sc.close();
